@@ -3,6 +3,7 @@ package com.akarsh.Restaurant.Controllers;
 import com.akarsh.Restaurant.Entities.FoodItem;
 import com.akarsh.Restaurant.Exceptions.InvalidIDException;
 import com.akarsh.Restaurant.Services.FoodItemService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/foodItem")
+@Tag(name = "FoodItem APIs")
 public class FoodItemController
 {
 

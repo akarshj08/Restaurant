@@ -5,6 +5,7 @@ import com.akarsh.Restaurant.Entities.User;
 import com.akarsh.Restaurant.Exceptions.InvalidIDException;
 import com.akarsh.Restaurant.Exceptions.InvalidOperationException;
 import com.akarsh.Restaurant.Services.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
+@Tag(name = "User APIs")
 public class UserController
 {
 

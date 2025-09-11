@@ -4,6 +4,7 @@ import com.akarsh.Restaurant.Entities.CartItem;
 import com.akarsh.Restaurant.Exceptions.InvalidIDException;
 import com.akarsh.Restaurant.Exceptions.InvalidOperationException;
 import com.akarsh.Restaurant.Services.CartService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/cart")
+@Tag(name = "Cart APIs")
 public class CartController
 {
 
